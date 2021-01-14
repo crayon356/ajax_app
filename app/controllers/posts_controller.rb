@@ -13,7 +13,6 @@ def create
 end
 
 def checked
-  binding.pry
   post = Post.find(params[:id])
     if post.checked
       post.update(checked: false)
